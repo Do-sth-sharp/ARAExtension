@@ -15,9 +15,6 @@ namespace ARAExtension {
 		ARAContentTypeSheetChord = ARA::kARAContentTypeSheetChords,
 
 		ARAContentTypeNotePlus = 0x8000,
-		ARAContentTypeSustainPedal,
-		ARAContentTypeSostenutoPedal,
-		ARAContentTypeSoftPedal,
 		ARAContentTypePitchWheel,
 		ARAContentTypeAfterTouch,
 		ARAContentTypeChannelPressure,
@@ -31,12 +28,6 @@ namespace ARAExtension {
 		uint8_t pitch;
 		uint8_t vel;
 		juce::String lyrics;
-	};
-
-	struct ARAContentPedal {
-		uint8_t channel;
-		double timeSec;
-		bool pedalOn;
 	};
 
 	struct ARAContentIntParam {
